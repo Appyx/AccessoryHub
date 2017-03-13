@@ -1,0 +1,46 @@
+ls# the following commands use a external script to send messages over a socket in python
+./echoclient.py ruhezustand
+./echoclient.py herunterfahren
+./echoclient.py neustarten
+
+# send magic packet to pc
+sudo etherwake <mac-address>
+
+# the following commands are used as a workaround if infrared recording does not work correctly
+sudo irsend send_once lg-tv KEY_SOURCE
+sudo irsend send_once lg-tv KEY_POWER
+sudo irsend send_once lg-tv KEY_SETTINGS
+sudo irsend send_once lg-tv KEY_VOLUP
+sudo irsend send_once lg-tv KEY_VOLDOWN
+sudo irsend send_once lg-tv KEY_NEXT
+sudo irsend send_once lg-tv KEY_PREVIOUS
+sudo irsend send_once lg-tv KEY_3D
+sudo irsend send_once lg-tv KEY_MUTE
+sudo irsend send_once lg-tv KEY_SMART
+sudo irsend send_once lg-tv KEY_UP
+sudo irsend send_once lg-tv KEY_DOWN
+sudo irsend send_once lg-tv KEY_LEFT
+sudo irsend send_once lg-tv KEY_RIGHT
+sudo irsend send_once lg-tv KEY_OK
+sudo irsend send_once lg-tv KEY_BACK
+sudo irsend send_once lg-tv KEY_EXIT
+sudo irsend send_once lg-tv KEY_EPG
+sudo irsend send_once lg-tv KEY_PLAY
+sudo irsend send_once lg-tv KEY_STOP
+sudo irsend send_once apple-tv KEY_UP
+sudo irsend send_once apple-tv KEY_DOWN
+sudo irsend send_once apple-tv KEY_LEFT
+sudo irsend send_once apple-tv KEY_RIGHT
+sudo irsend send_once apple-tv KEY_OK
+sudo irsend send_once apple-tv KEY_MENU
+sudo irsend send_once apple-tv KEY_PLAY
+
+#rebooting the pi
+sudo reboot
+
+#put mac to sleep
+pmset sleepnow
+
+
+#test
+open /Users/Robert/Desktop
