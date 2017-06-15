@@ -21,6 +21,12 @@ public class AccessoryHub {
         }
 
         DataHandler handler = new DataHandler();
+        System.out.println("available commands:");
+        String[] commands = handler.getAvailableCommands();
+        for (int i = 0; i < commands.length; i++) {
+            System.out.println(commands[i]);
+        }
+
 
         try {
             final Socket socket = IO.socket("http://" + destination);
